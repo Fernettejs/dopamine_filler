@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Dopamine",
+    "description": "Dopamine by Completion",
+    "version": "1.0.0",
+    "icons": {"128": "dopamine-icon_128.png"},
+    "browser_action": {
+        "default_icon": "dopamine-icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["popup.js"],
+        "persistent": false
+      },
+    "permissions": ["activeTab"],
+    "web_accessible_resources": [
+        "chrome.extension.getURL('completion.mp3')"
+    ],
+    "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'"
+
+}

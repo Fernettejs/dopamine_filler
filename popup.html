@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dopamine Filler</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="switch.css">
+
+    <style>
+        html, body {
+            font-family: 'Cutive', serif;
+            font-size: 14px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+        }
+
+        h1 {
+            font-family: monospace;
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0;
+            color: #e25403;
+        }
+
+        a:link, a:visited {
+            color: #000;
+            outline: 0;
+            text-decoration: none;
+        }
+
+        img {
+            width: 30px;
+        }
+
+        .modal-header {
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+
+        .modal-content {
+            padding: 0 22px;
+        }
+
+        .modal-icons {
+            border-top: 0.5px solid #dadada;
+            height: 50px;
+            width: 100%;
+        }
+
+        .logo {
+            padding: 16px;
+        }
+
+        .logo-icon {
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .version {
+            color: #444;
+            font-size: 18px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .flex {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+        }
+
+        .flex:hover {
+            opacity: 0.4;
+        }
+
+        .flex .fa {
+            font-size: 40px;
+            color: #e25403;
+        }
+
+    </style>
+
+</head>
+<body> 
+    <div class="modal-header">
+        <h1 class="logo">
+            <img src="images/dopamine-chrome-logo.png" alt="Dopamine Logo" class="logo-icon"> Dopamine Filler <span class="version">(1.0.0)</span>
+        </h1>
+    </div>
+    <div class="modal-content">
+        <p>Complete Tasks. Get Dopamine.</p>
+    </div>
+    <div class="dopamine-fill">
+        <!-- Filler box -->
+    </div>
+    <div class="switches">
+        <div class="single-switch">
+            <h3 class="task">Drink Water</h3>
+            <label class="switch" id="switch1">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="single-switch">
+            <h3 class="task">Breathe</h3>
+            <label class="switch" id="switch2">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="single-switch">
+            <h3 class="task">Vitamins</h3>
+            <label class="switch" id="switch3">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="single-switch">
+            <h3 class="task">Read</h3>
+            <label class="switch" id="switch4">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="single-switch">
+            <h3 class="task">Do Something You Love</h3>
+            <label class="switch" id="switch5">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="single-switch">
+            <h3 class="task">Learn Something New</h3>
+            <label class="switch" id="switch6">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="modal-icons">
+        <div class="flex-container">      
+            <div class="flex">
+                <a href="https://www.youtube.com/watch?v=nmFUDkj1Aq0" target="_blank">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </div>            
+            <div class="flex">
+                <a href="https://www.reddit.com/r/todayilearned/" target="_blank">
+                    <i class="fa fa-reddit"></i>
+                </a>
+            </div>            
+            <div class="flex">
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>            
+            <div class="flex">
+                <a href="https://www.github.com" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
